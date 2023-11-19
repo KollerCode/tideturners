@@ -1,13 +1,25 @@
-body {
+@import url(https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap")
+
+body, html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Chelsea Market', 'Overlock'
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.font1{
+    font-family: 'Chelsea Market';
+}
+
+.font2{
+    font-family: 'Overlock';
+}
+
+.homeStyle{
+    background: linear-gradient(#8CD4BA, #3C9D7A);
+}
+.navBar{
+    background-color: #FFF;
 }
