@@ -8,10 +8,8 @@ function Home() {
     <div className="homeStyle">
       <Container className="text-center pt-5 pb-5">
         <Col lg="12">
-          <h1 className="font1">Natasha Koller</h1>
-          <h2 className="font2">
-            UX/UI Engineer, Accessibility & Diversity Chamption, & Teacher{" "}
-          </h2>
+          <h1 className="font1">Games are Fun</h1>
+          <h2 className="font2">Here there will be whatever text you want</h2>
           <br></br>
           <br></br>
         </Col>
@@ -56,6 +54,10 @@ function Home() {
               </svg>
             </Button>
           </ul>
+          <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
         </div>
       </Container>
     </div>

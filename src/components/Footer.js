@@ -1,13 +1,13 @@
 import React from "react";
 
 function Footer() {
-  return(
-<div class="footer">
-  <small>
-    &copy; Copyright, <strong>NK </strong>, 2022
-  </small>
+  return (
+    <div className="footer text-center">
+      <small>
+        &copy; Copyright, <strong>Tideturners </strong>, 2023
+      </small>
     </div>
-  )
+  );
 }
 
 export default Footer;

@@ -2,41 +2,56 @@ import React from "react";
 import { Navbar, Nav, NavbarBrand, Button } from "react-bootstrap";
 // import { NavLink } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
+import logo from "../assets/logo.png"
 
 
 function NavBar() {
   return (
     <Navbar className="navBar">
       <LinkContainer to="/">
-        <Navbar.Brand className="brand">
-          <img
-            id="icon"
-            // src={NK}
-            width="100"
-            height="100"
-            class="d-inline-block align-top"
-            alt=""
-          />
-        </Navbar.Brand> 
+        <Navbar.Brand className="brand px-3">
+          <img id="icon" src={logo} width="100%" height="100px" alt="" />
+        </Navbar.Brand>
       </LinkContainer>
-      <Nav className="mr-auto" style={{ marginLeft: "auto", paddingRight: 40 }}>
+      <Nav
+        className="mr-auto navFont px-3"
+        style={{ marginLeft: "auto", paddingRight: 40 }}
+      >
         <LinkContainer to="/">
           <Nav.Link>
-            <strong>Home</strong>
+            <h3>
+              <strong>Home</strong>
+            </h3>
           </Nav.Link>
         </LinkContainer>
         <LinkContainer to="about-me">
           <Nav.Link>
-            <strong>About Me</strong>
+            <h3>
+              <strong>Floppy and the Sleepy Planet</strong>
+            </h3>
           </Nav.Link>
         </LinkContainer>
-        <Button>
         <LinkContainer to="resume">
           <Nav.Link>
-            <strong>Resume</strong>
+            <h3>
+              <strong>Have You Herd?</strong>
+            </h3>
           </Nav.Link>
-        </LinkContainer> 
-        </Button>
+        </LinkContainer>
+        <LinkContainer to="resume">
+          <Nav.Link>
+            <h3>
+              <strong>Merchandise</strong>
+            </h3>
+          </Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="resume">
+          <Nav.Link>
+            <h3>
+              <strong>Contact</strong>
+            </h3>
+          </Nav.Link>
+        </LinkContainer>
       </Nav>
     </Navbar>
   );
