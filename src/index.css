@@ -31,6 +31,7 @@ body, html {
 
 .homeStyle{
     background: linear-gradient(#8CD4BA, #3C9D7A);
+    overflow-y: scroll;
 }
 .navBar{
     background-color: #FFF;
