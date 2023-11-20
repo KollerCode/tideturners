@@ -50,6 +50,13 @@ body {
   background: #015871;
 }
 
+.pirateWave{
+  position: absolute;
+  top: -204px;
+  right: 606px;
+  animation: wave 8s cubic-bezier(0, 0.69, 1, -1.15) -0.125s infinite, swell 5s ease -2.25s infinite;
+}
+
 .wave {
   background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
   position: absolute;
@@ -62,7 +69,7 @@ body {
 
 .wave:nth-of-type(2) {
   top: -175px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 22s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 
@@ -74,6 +81,7 @@ body {
     margin-left: -1600px;
   }
 }
+
 @keyframes swell {
   0%,
 	100% {
