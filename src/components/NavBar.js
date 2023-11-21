@@ -24,14 +24,14 @@ function NavBar() {
             </h3>
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="about-me">
+        <LinkContainer to="floppy">
           <Nav.Link>
             <h3>
               <strong>Floppy and the Sleepy Planet</strong>
             </h3>
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="resume">
+        <LinkContainer to="have-you-herd">
           <Nav.Link>
             <h3>
               <strong>Have You Herd?</strong>

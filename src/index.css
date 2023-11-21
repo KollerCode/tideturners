@@ -107,3 +107,47 @@ body {
   right:0;
   /* background-color: #3C9D7A; */
 }
+
+/* Have you Herd styling */
+.hyhLogo{
+  width: 100%;
+}
+.topBanner{
+  background-image: url(./assets/hyh-bg.png) !important;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  /* --fill-layer-image-opacity: 1;
+    --fill-layer-background-media-position: absolute;
+    --fill-layer-background-media-pointer-events: none;
+    --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    width: 100%; */
+    /* --column-width: 980px;
+    --column-flex: 980;
+        height: 100%;
+    left: 0;
+    -webkit-mask-image: var(--mask-image,none);
+    mask-image: var(--mask-image,none);
+    -webkit-mask-position: var(--mask-position,0);
+    mask-position: var(--mask-position,0);
+    -webkit-mask-repeat: var(--mask-repeat,no-repeat);
+    mask-repeat: var(--mask-repeat,no-repeat);
+    -webkit-mask-size: var(--mask-size,100%);
+    mask-size: var(--mask-size,100%);
+    overflow: hidden;
+    pointer-events: var(--fill-layer-background-media-pointer-events);
+    position: absolute;
+    top: 0;
+    width: 100%;
+        --bg-overlay-color: transparent;
+    --bg-gradient: none;
+    --padding: 0px;
+    --margin: 0px;
+    min-width: 980px;
+    --firstChildMarginTop: -1px;
+    --lastChildMarginBottom: -1px;
+    --items-direction: row;
+        pointer-events: var(--fill-layer-background-media-pointer-events);
+    position: var(--fill-layer-background-media-position); */
+}
