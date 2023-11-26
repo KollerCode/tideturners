@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap")
+@import url(https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap);
 
-
+/* overall app styling */
 body, html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +8,18 @@ body, html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+body {
+  background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
+  overflow: hidden;
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .font1{
@@ -17,6 +29,7 @@ body, html {
 .font2{
     font-family: 'Overlock';
 }
+/* navbar */
 
 .navFont{
     font-family: 'Chelsea Market';
@@ -28,18 +41,14 @@ body, html {
       color: #8CD4BA;
     }
 }
-
-.homeStyle{
-    background: linear-gradient(#8CD4BA, #3C9D7A);
-    overflow-y: scroll;
-}
 .navBar{
     background-color: #FFF;
 }
 
-body {
-  background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
-  overflow: hidden;
+/* home page */
+.homeStyle{
+    background: linear-gradient(#8CD4BA, #3C9D7A);
+    overflow-y: scroll;
 }
 
 .ocean {
@@ -96,58 +105,55 @@ body {
 	display:none;
 }
 
+/* footer */
 .footer{
   padding-top: 10px;
   padding-bottom: 10px;
   color: #FFF;
   background-color: #000;
-  position:absolute;
-  left:0;
-  bottom:0;
-  right:0;
-  /* background-color: #3C9D7A; */
+  margin-top: auto;
 }
 
 /* Have you Herd styling */
 .hyhLogo{
   width: 100%;
+  position: absolute;
 }
 .topBanner{
-  background-image: url(./assets/hyh-bg.png) !important;
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: scroll;
   width: 100%;
-  height: 1000px;
-  /* --fill-layer-image-opacity: 1;
-    --fill-layer-background-media-position: absolute;
-    --fill-layer-background-media-pointer-events: none;
-    --bg-overlay-color: transparent;
-    --bg-gradient: none;
-    width: 100%; */
-    /* --column-width: 980px;
-    --column-flex: 980;
-        height: 100%;
-    left: 0;
-    -webkit-mask-image: var(--mask-image,none);
-    mask-image: var(--mask-image,none);
-    -webkit-mask-position: var(--mask-position,0);
-    mask-position: var(--mask-position,0);
-    -webkit-mask-repeat: var(--mask-repeat,no-repeat);
-    mask-repeat: var(--mask-repeat,no-repeat);
-    -webkit-mask-size: var(--mask-size,100%);
-    mask-size: var(--mask-size,100%);
-    overflow: hidden;
-    pointer-events: var(--fill-layer-background-media-pointer-events);
+}
+
+.topBanner::before {
+    background-image: url('assets/hyh-fg.png');
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
-        --bg-overlay-color: transparent;
-    --bg-gradient: none;
-    --padding: 0px;
-    --margin: 0px;
-    min-width: 980px;
-    --firstChildMarginTop: -1px;
-    --lastChildMarginBottom: -1px;
-    --items-direction: row;
-        pointer-events: var(--fill-layer-background-media-pointer-events);
-    position: var(--fill-layer-background-media-position); */
+    height: 100%;
 }
+
+.topBannerMid{
+  position: relative;
+  width: 100%;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  /* animation: reveal 22s cubic-bezier(0.36, 2.45, 0.63, 2.53) -0.125s infinite, swell 7s ease -1.25s infinite; */
+  opacity: 1;
+}
+
+
+
+
+

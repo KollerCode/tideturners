@@ -5,18 +5,40 @@ import Col from "react-bootstrap/Col";
 import NavBar from "./NavBar";
 import bg from "../assets/hyh-bg.png";
 import logo from "../assets/hyh-logo.png";
+import mg from "../assets/hyh-mg.png"
+import fg from "../assets/hyh-fg.png";
+import Games from "./Games"
+
 
 function Hyh() {
-    return (
-      <div className="topBanner">
-        <img src={logo} className="hyhLogo img-fluid"></img>
-      </div>
-      //   <Container className="text-center px-5 pt-5 pb-5">
-      //     <Col lg="12">
-      //       <h1 className="font1">Games are Fun</h1>
-      //     </Col>
-      //   </Container>
-    );
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal);
+  reveal()
+  
+  return (
+    <div className="">
+      <img src={bg} className="topBanner img-fluid"></img>
+      <img src={logo} className="hyhLogo img-fluid"></img>
+      <img src={mg} className="topBannerMid reveal"></img>
+      {/* <img src={fg} className="topBannerMid reveal"></img> */}
+      <Games></Games>
+    </div>
+    
+  ); 
+  
 }
 
 export default Hyh;
