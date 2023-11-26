@@ -7,7 +7,7 @@ import bg from "../assets/hyh-bg.png";
 import logo from "../assets/hyh-logo.png";
 import mg from "../assets/hyh-mg.png"
 import fg from "../assets/hyh-fg.png";
-import Games from "./Games"
+import trailer from "../assets/trailer.png"
 
 
 function Hyh() {
@@ -46,13 +46,28 @@ function Hyh() {
   
   return (
     <div className="">
-      <div className="section-1">
+      <div className="section-1 row">
         <img src={bg} className="topBanner img-fluid"></img>
         <img src={logo} className="hyhLogo img-fluid"></img>
         <img src={mg} className="topBannerMid reveal"></img>
         <img src={fg} className="foreground"></img>
       </div>
-      <Games></Games>
+      <div className="section2 row justify-content-center pb-5">
+        <div className="row justify-content-center pt-5 col-12">
+          <img src={trailer} className="labels row img-fluid"></img>
+        </div>
+        <video
+          width="750"
+          height="500"
+          controls
+          className="hyhVideo col-lg-6 col-12"
+        >
+          <source
+            src="https://video.wixstatic.com/video/91bad7_9867b5cbe7034c91ab083bc4ca820be3/480p/mp4/file.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
     </div>
   ); 
   
