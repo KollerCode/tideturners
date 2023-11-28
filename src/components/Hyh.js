@@ -8,6 +8,8 @@ import logo from "../assets/hyh-logo.png";
 import mg from "../assets/hyh-mg.png"
 import fg from "../assets/hyh-fg.png";
 import trailer from "../assets/trailer.png"
+import available from "../assets/available.png"
+import btn from "../assets/steam-btn.png"
 
 
 function Hyh() {
@@ -46,12 +48,14 @@ function Hyh() {
   
   return (
     <div className="">
+      {/* section 1 */}
       <div className="section-1 row">
         <img src={bg} className="topBanner img-fluid"></img>
         <img src={logo} className="hyhLogo img-fluid"></img>
         <img src={mg} className="topBannerMid reveal"></img>
         <img src={fg} className="foreground"></img>
       </div>
+      {/* Section 2 */}
       <div className="section2 row justify-content-center pb-5">
         <div className="row justify-content-center pt-5 col-12">
           <img src={trailer} className="labels row img-fluid"></img>
@@ -67,6 +71,15 @@ function Hyh() {
             type="video/mp4"
           />
         </video>
+      </div>
+      {/* Section 3 */}
+      <div className="section3">
+        <div>
+          <img className="px-5 py-5 row col-3 img-fluid" src={available}></img>
+        <a href="facebook.com" target="_blank">
+          <img className="steamBtn img-fluid" src={btn}></img>
+        </a>
+        </div>
       </div>
     </div>
   ); 

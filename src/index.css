@@ -32,19 +32,23 @@ body {
 /* navbar */
 
 .navFont{
-    font-family: 'Chelsea Market';
+  font-family: 'Chelsea Market';
+  font-size: 16px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #3C9D7A;
+    color: #193261;
     :hover{
-      color: #8CD4BA;
+      color: #2F5FB9;
     }
 }
 .navBar{
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #2F5FB9;
+}
 /* home page */
 .homeStyle{
     background: linear-gradient(#8CD4BA, #3C9D7A);
@@ -137,6 +141,7 @@ body {
 }
 .topBanner{
   position: absolute;
+  height: -webkit-fill-available;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: scroll;
@@ -145,9 +150,8 @@ body {
 
 .foreground{
   width: 100%;
-  height: auto;
+  height: -webkit-fill-available;
   position: absolute;
-  left: 0px;
   z-index: 1;
   transform: scale(1.1);
   transition: 2s all ease;
@@ -186,5 +190,17 @@ body {
   width: 200px;
 }
 
+.section3{
+  background-color: #2F5FB9;
+}
 
+section3 a{
+  display: block;
+}
+.steamBtn{
+  position: relative;
+  /* top: 1811px; */
+  /* left: 271px; */
+  
+}
 

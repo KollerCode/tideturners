@@ -10,7 +10,7 @@ function NavBar() {
     <Navbar className="navBar">
       <LinkContainer to="/">
         <Navbar.Brand className="brand px-3">
-          <img id="icon" src={logo} width="100%" height="100px" alt="" />
+          <img id="icon" src={logo} width="100%" height="50px" alt="" />
         </Navbar.Brand>
       </LinkContainer>
       <Nav
@@ -19,37 +19,27 @@ function NavBar() {
       >
         <LinkContainer to="/">
           <Nav.Link>
-            <h3>
-              <strong>Home</strong>
-            </h3>
+            <strong>Home</strong>
           </Nav.Link>
         </LinkContainer>
         <LinkContainer to="floppy">
           <Nav.Link>
-            <h3>
-              <strong>Floppy and the Sleepy Planet</strong>
-            </h3>
+            <strong>Floppy and the Sleepy Planet</strong>
           </Nav.Link>
         </LinkContainer>
         <LinkContainer to="have-you-herd">
           <Nav.Link>
-            <h3>
-              <strong>Have You Herd?</strong>
-            </h3>
+            <strong>Have You Herd?</strong>
           </Nav.Link>
         </LinkContainer>
         <LinkContainer to="resume">
           <Nav.Link>
-            <h3>
-              <strong>Merchandise</strong>
-            </h3>
+            <strong>Merchandise</strong>
           </Nav.Link>
         </LinkContainer>
         <LinkContainer to="resume">
           <Nav.Link>
-            <h3>
-              <strong>Contact</strong>
-            </h3>
+            <strong>Contact</strong>
           </Nav.Link>
         </LinkContainer>
       </Nav>
