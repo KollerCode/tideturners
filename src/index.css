@@ -51,15 +51,15 @@ body {
 }
 /* home page */
 .homeStyle{
-    background: linear-gradient(#8CD4BA, #3C9D7A);
-    overflow-y: scroll;
+  background: linear-gradient(#8CD4BA, #3C9D7A);
+  color: #19347A;
 }
 
 .ocean {
   height: 5%;
   width: 100%;
   position: absolute;
-  bottom: 20px;
+  bottom: 343px;
   left: 0;
   background: #015871;
 }
@@ -109,12 +109,16 @@ body {
 	display:none;
 }
 
+.gamesHome{
+  background-color: #86B5E1;
+}
+
 /* footer */
 .footer{
   padding-top: 10px;
   padding-bottom: 10px;
   color: #FFF;
-  background-color: #000;
+  background-color: #429778;
   margin-top: auto;
 }
 

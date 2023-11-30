@@ -7,7 +7,8 @@ import Games from "./Games";
 
 function Home() {
   return (
-      <Container className="text-center px-5 pt-5 pb-5">
+    <div className="homeStyle">
+      <Container className="text-center py-5 px-5">
         <Col lg="12">
           <h1 className="font1">Games are Fun</h1>
           <h2 className="font2">
@@ -28,6 +29,11 @@ function Home() {
           <br></br>
           <br></br>
         </Col>
+        <div class="ocean">
+            <img class="pirateWave" src={logo} width="100px" height="100px" alt="" />
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div> 
         <div className="text-center">
           <ul>
             <Button href="https://github.com/KollerCode/">
@@ -69,14 +75,13 @@ function Home() {
               </svg>
             </Button>
           </ul>
-          {/* <div class="ocean">
-            <img class="pirateWave" src={logo} width="100px" height="100px" alt="" />
-            <div class="wave"></div>
-            <div class="wave"></div>
-          </div> */}
-      </div>
-      <Games></Games>
-    </Container>
+        </div>
+      </Container>
+        <div className="gamesHome">
+          <Games></Games>
+        </div>
+    </div>
+      
   );
 }
 
