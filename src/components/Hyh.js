@@ -10,7 +10,7 @@ import fg from "../assets/hyh-fg.png";
 import trailer from "../assets/trailer.png"
 import available from "../assets/available.png"
 import btn from "../assets/steam-btn.png"
-
+import iHFHT from"../assets/iHFHT.png"
 
 function Hyh() {
 
@@ -73,14 +73,19 @@ function Hyh() {
         </video>
       </div>
       {/* Section 3 */}
-      <div className="section3">
-        <div>
-          <img className="px-5 py-5 row col-3 img-fluid" src={available}></img>
-        <a href="facebook.com" target="_blank">
-          <img className="steamBtn img-fluid" src={btn}></img>
-        </a>
-        </div>
-      </div>
+      <Row className="section3 align-content-between">
+        <Col>
+          <img className="col-6 img-fluid" src={available}></img>
+        </Col>
+        <Col>
+          <a href="facebook.com" target="_blank"className="img-fluid">
+            <img className="steamBtn img-fluid" src={btn}></img>
+          </a>
+        </Col>
+        <Col>
+          <img className="img-fluid" src={iHFHT}></img>
+        </Col>
+      </Row>
     </div>
   ); 
   

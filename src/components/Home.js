@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../assets/logo.png";
 import Games from "./Games";
+import Team from "./Team";
+import Card from "react-bootstrap/Card";
 
 function Home() {
   return (
@@ -30,10 +32,16 @@ function Home() {
           <br></br>
         </Col>
         <div class="ocean">
-            <img class="pirateWave" src={logo} width="100px" height="100px" alt="" />
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div> 
+          <img
+            class="pirateWave"
+            src={logo}
+            width="100px"
+            height="100px"
+            alt=""
+          />
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
         <div className="text-center">
           <ul>
             <Button href="https://github.com/KollerCode/">
@@ -77,11 +85,15 @@ function Home() {
           </ul>
         </div>
       </Container>
-        <div className="gamesHome">
-          <Games></Games>
-        </div>
+      <div className="gamesHome">
+        <Games></Games>
+      </div>
+      <Container className="teamSection">
+        <h1 className="text-center py-3">Meet the Team</h1>
+        {/* <img src={Team} alt="" /> */}
+        <Team></Team>
+      </Container>
     </div>
-      
   );
 }
 
