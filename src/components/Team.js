@@ -88,7 +88,7 @@ return (
       <Row className="justify-content-center">
         {teamData.map((team) => {
           return (
-            <Col sm={4} key={team.id} className="mb-3">
+            <Col sm={3} key={team.id} className="mb-3 col-sm-12 col-md-6 col-lg-4 col-xl-3">
               <div className="holder">
                 <Card>
                   <Card.Img variant="top" src={team.image} />
