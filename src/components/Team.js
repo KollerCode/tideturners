@@ -1,140 +1,114 @@
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import remi from "../assets/remi.jpg";
-import bennie from "../assets/bennie.png";
-import ryan from "../assets/ryan.jpg";
-import jose from "../assets/jose.jpg";
-import graham from "../assets/graham.jpg";
-import sean from "../assets/sean.png";
-import Container from "react-bootstrap/Container";
+import {
+Button,
+Carousel,
+CarouselItem,
+Caption,
+Container,
+Row,
+Col,
+Card,
+} from "react-bootstrap";
 
-function GridExample() {
-    return (
-      <Container>
-        <Row>
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src={remi} alt="team member" class="img-responsive"></img>
-              </div>
-              <div class="content row align-content-center">
-                <h3 class="title">Alfonso Crespo</h3>
-                <span class="post">Creative Director</span>
-                <p>
-                  Remi has been working for 15 years in production ranging in
-                  AAA at various studios (Liquid development/Microsoft) as well
-                  as work for independent and being a company owner outsourcing
-                  for both games and film. Such roles I have filled are
-                  technical artist/World artist, level designer and producer.
-                </p>
-                <ul class="social">
-                  <li>
-                    <a href="#" class="fa fa-facebook"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="fa fa-twitter"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="fa fa-linkedin"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+import remi from "../assets/team/remi.png";
+import bennie from "../assets/team/bennie.png";
+import ryan from "../assets/team/ryan.png";
+import jose from "../assets/team/jose.png";
+import graham from "../assets/team/graham.png";
+import sean from "../assets/team/sean.png";
+import adam from "../assets/team/adam.png"
 
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team active">
-              <div class="pic">
-                <img
-                  src={bennie}
-                  alt="team member"
-                  class="img-responsive"
-                ></img>
+const teamData = [
+  {
+    id: 1,
+    image: require("../assets/team/remi.png"),
+    title: "Remi Crespo",
+    subtitle: "Creative Director",
+    description:
+      "Remi has been working for 15 years in production ranging in AAA at various studios (Liquid development/Microsoft) as well as work for independent and being a company owner outsourcing for both games and film. Such roles I have filled are technical artist/World artist, level designer and producer.",
+    quote: "VTec coffee powered",
+  },
+  {
+    id: 2,
+    image: require("../assets/team/jose.png"),
+    title: "Jose Montanez",
+    subtitle: "Production Manager",
+    description:
+      "16 years of project management expertise in the dynamic video game industry, my focus has primarily revolved around AAA titles as the Production Manager for Liquid Development a Keywords Studio. During my career, I have displayed proficiency in multiple areas, including level design and systems design.",
+    quote: "is super pretty",
+  },
+  {
+    id: 3,
+    image: require("../assets/team/graham.png"),
+    title: "Graham Leeb",
+    subtitle: "Development Manager",
+    description:
+      "15 years of development experience working in mobile development, serious games, government simulation, AAA and indie development. Specialist in Unreal Development, and project architecture.",
+    quote: "has cool hair",
+  },
+  {
+    id: 4,
+    image: require("../assets/team/ryan.png"),
+    title: "Ryan Waller",
+    subtitle: "Business Relations",
+    description:
+      "Ryan stands as a luminary in the entrepreneurial and investment domains, boasting over 15 years of unmatched expertise, primarily rooted in the gaming sector. As the pioneering force behind Forthright Entertainment, a high end quality boutique publishing entity synonymous with curating top-tier indie titles for PC and consoles, Ryan's unparalleled insights into the nuanced business of the gaming realm have solidified his place as a sought-after advisor among the industry's premier independent studios.",
+    quote: "has cool hair",
+  },
+  {
+    id: 5,
+    image: require("../assets/team/bennie.png"),
+    title: "Bennie Herdy",
+    subtitle: "Art Director",
+    description:
+      "Bennie is the creative visionary of our team who leads the development and visualization of our projects, setting the artistic direction and ensuring conceptual integrity.",
+    quote: "still feeds their neopets",
+  },
+  {
+    id: 6,
+    image: require("../assets/team/adam.png"),
+    title: "Adam Stagg",
+    subtitle: "Lead Programmer",
+    description:
+      "Adam is a passionate and dedicated individual who embarked on a journey into the world of programming in 2015. With an unwavering love for the craft, Adam discovered their passion for coding through the immersive world of games, which captivated them during their formative years. In September 2022, Adam graduated from Full Sail University, equipped with a solid foundation and a wealth of knowledge in the field. Since then, they have seamlessly transitioned into the professional realm, where their enthusiasm for programming continues to flourish. Adam finds joy and fulfillment in every line of code, turning their childhood fascination with games into a lifelong commitment to creating innovative and impactful software solutions.",
+    quote: "Thinks Neuralink is neat",
+  },
+  {
+    id: 7,
+    image: require("../assets/team/sean.png"),
+    title: "Sean Lockhart",
+    subtitle: "Lead Level Designer",
+    description: "coming soon",
+    quote: "has cool hair",
+  },
+];
+function Team() {
+return (
+  <section id="team" className="block blog-block">
+    <Container fluid>
+      <Row className="justify-content-center">
+        {teamData.map((team) => {
+          return (
+            <Col sm={4} key={team.id} className="mb-3">
+              <div className="holder">
+                <Card>
+                  <Card.Img variant="top" src={team.image} />
+                  <Card.Body>
+                    <Card.Title>{team.title}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                       {team.subtitle}
+                    </Card.Subtitle>
+                    <Card.Text>{team.description}</Card.Text>
+                    <Card.Text>{team.quote}</Card.Text>
+                  </Card.Body>
+                </Card>
               </div>
-              <div class="content row align-content-center">
-                <h3 class="title">Bennie Herdy</h3>
-                <span class="post">Art Director</span>
-                <p>
-                  Bennie is the creative visionary of our team who leads the
-                  development and visualization of our projects, setting the
-                  artistic direction and ensuring conceptual integrity.
-                </p>
-                <ul class="social">
-                  <li>
-                    <a href="#" class="fa fa-facebook"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="fa fa-twitter"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="fa fa-linkedin"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src={jose} alt="team member" class="img-responsive"></img>
-              </div>
-              <div class="content row align-content-center">
-                <h3 class="title">Jose Montanez</h3>
-                <span class="post">Production Manager</span>
-                <p>
-                  16 years of project management expertise in the dynamic video
-                  game industry, my focus has primarily revolved around AAA
-                  titles as the Production Manager for Liquid Development a
-                  Keywords Studio. During my career, I have displayed
-                  proficiency in multiple areas, including level design and
-                  systems design.
-                </p>
-                <ul class="social">
-                  <li>
-                    <a href="#" class="fa fa-facebook"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="fa fa-twitter"></a>
-                  </li>
-                  <li>
-                    <a href="#" class="fa fa-linkedin"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Row>
-      </Container>
-      //   <Row xs={1} md={2} className="g-4">
-      //     {Array.from({ length: 4 }).map((_, idx) => (
-      //       <Col key={idx}>
-      //         <Card>
-      //           <Card.Img variant="top" src="holder.js/100px160" />
-      //           <Card.Body>
-      //             <Card.Title>Remi Crespo</Card.Title>
-      //             <Card.Text>
-      //               Remi has been working for 15 years in production ranging in AAA at
-      //               various studios (Liquid development/Microsoft) as well as work for
-      //               independent and being a company owner outsourcing for both games
-      //               and film. Such roles I have filled are technical artist/World
-      //               artist, level designer and producer.
-      //             </Card.Text>
-      //           </Card.Body>
-      //         </Card>
-      //         <Card>
-      //           <Card.Img variant="top" src="holder.js/100px160" />
-      //           <Card.Body>
-      //             <Card.Title>Adam Stagg</Card.Title>
-      //             <Card.Text>
-      //               Coming Soon
-      //             </Card.Text>
-      //           </Card.Body>
-      //         </Card>
-      //       </Col>
-      //     ))}
-      //   </Row>
-    );
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
+  </section>
+);
 }
 
-export default GridExample;
+export default Team;

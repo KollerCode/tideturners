@@ -1,7 +1,5 @@
 import React from "react";
-import {Button, Carousel, CarouselItem, Caption, Container,} from "react-bootstrap";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import {Button, Carousel, CarouselItem, Caption, Container, Row, Col,} from "react-bootstrap";
 import NavBar from "./NavBar";
 import bg from "../assets/hyh-bg.png";
 import logo from "../assets/hyh-logo.png";
@@ -10,7 +8,8 @@ import fg from "../assets/hyh-fg.png";
 import trailer from "../assets/trailer.png"
 import available from "../assets/available.png"
 import btn from "../assets/steam-btn.png"
-import iHFHT from"../assets/iHFHT.png"
+import iHFHT from "../assets/iHFHT.png"
+import Dogs from "./Dogs";
 
 function Hyh() {
 
@@ -86,6 +85,7 @@ function Hyh() {
           <img className="img-fluid" src={iHFHT}></img>
         </Col>
       </Row>
+      <Dogs></Dogs>
     </div>
   ); 
   

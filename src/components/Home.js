@@ -1,11 +1,9 @@
 import React from "react";
-import { Button, Carousel, CarouselItem, Caption, Container } from "react-bootstrap"
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Button, Carousel, CarouselItem, Caption, Container, Row, Col, Card } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import Games from "./Games";
 import Team from "./Team";
-import Card from "react-bootstrap/Card";
+import "animate.css";
 
 function Home() {
   return (
