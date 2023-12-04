@@ -24,8 +24,8 @@ const teamData = [
     title: "Remi Crespo",
     subtitle: "Creative Director",
     description:
-      "Remi has been working for 15 years in production ranging in AAA at various studios (Liquid development/Microsoft) as well as work for independent and being a company owner outsourcing for both games and film. Such roles I have filled are technical artist/World artist, level designer and producer.",
-    quote: "VTec coffee powered",
+      "Remi has over 15 years experience in production, ranging from AAA studios (Liquid Development, Microsoft) to independent teams. He has since taken all his collective knowledge and poured it into his own company, TideTurners, with a focus in games and film. His previous roles include: Producer, Technical Artist, World Artist, & Level Designer.",
+    quote: "Does not sleep",
   },
   {
     id: 2,
@@ -33,8 +33,8 @@ const teamData = [
     title: "Jose Montanez",
     subtitle: "Production Manager",
     description:
-      "16 years of project management expertise in the dynamic video game industry, my focus has primarily revolved around AAA titles as the Production Manager for Liquid Development a Keywords Studio. During my career, I have displayed proficiency in multiple areas, including level design and systems design.",
-    quote: "is super pretty",
+      "With 16 years of project management expertise in the dynamic video game industry, Jose’s focus has primarily revolved around AAA titles. His keen proficiency has been observed in multiple areas, including Level Design and Systems Design. Jose’s previous roles include serving as Production Manager for Liquid Development, a Keywords Studio.",
+    quote: "his mom says he has a great smile",
   },
   {
     id: 3,
@@ -42,8 +42,8 @@ const teamData = [
     title: "Graham Leeb",
     subtitle: "Development Manager",
     description:
-      "15 years of development experience working in mobile development, serious games, government simulation, AAA and indie development. Specialist in Unreal Development, and project architecture.",
-    quote: "has cool hair",
+      "Having previously worked in Mobile development, Serious Games, Government Simulation, AAA & Indie titles, Graham has amassed 15+ of experience in development. He specializes in Unreal development, and project architecture.",
+    quote: "Has cool hair",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const teamData = [
     subtitle: "Business Relations",
     description:
       "Ryan stands as a luminary in the entrepreneurial and investment domains, boasting over 15 years of unmatched expertise, primarily rooted in the gaming sector. As the pioneering force behind Forthright Entertainment, a high end quality boutique publishing entity synonymous with curating top-tier indie titles for PC and consoles, Ryan's unparalleled insights into the nuanced business of the gaming realm have solidified his place as a sought-after advisor among the industry's premier independent studios.",
-    quote: "has cool hair",
+    quote: "Super duper awesome",
   },
   {
     id: 5,
@@ -60,8 +60,8 @@ const teamData = [
     title: "Bennie Herdy",
     subtitle: "Art Director",
     description:
-      "Bennie is the creative visionary of our team who leads the development and visualization of our projects, setting the artistic direction and ensuring conceptual integrity.",
-    quote: "still feeds their neopets",
+      "Bennie is the creative visionary of our team who leads the development and visualization of our projects, setting the artistic direction and ensuring conceptual integrity. They are meticulous in their work, coming from an artistically diverse background with experience in many different mediums of art. They specialize in Concept Art, UI Design, and Illustrations.",
+    quote: "Still feeds their neopets",
   },
   {
     id: 6,
@@ -77,8 +77,8 @@ const teamData = [
     image: require("../assets/team/sean.png"),
     title: "Sean Lockhart",
     subtitle: "Lead Level Designer",
-    description: "coming soon",
-    quote: "has cool hair",
+    description: "missing description - very on brand for him",
+    quote: "Less cool hair than Graham",
   },
 ];
 function Team() {
