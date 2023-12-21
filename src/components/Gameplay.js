@@ -1,93 +1,162 @@
 import React from "react";
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
+import Carousel from "react-simply-carousel";
 
+const images = [
+  "https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550133730-695473e544be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550167164-1b67c2be3973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550223640-23097fc71cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550330039-a54e15ed9d33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1549737328-8b9f3252b927?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1549833284-6a7df91c1f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1549985908-597a09ef0a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "https://images.unsplash.com/photo-1550064824-8f993041ffd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+];
 function Gameplay() {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
 
   return (
+    //     <div>
+    //       <Carousel
+    //     autoplay={true}
+    //         updateOnItemClick
+    //         containerProps={{}}
+    //         activeSlideIndex={activeSlide}
+    //         activeSlideProps={{}}
+    //         onRequestChange={setActiveSlide}
+    //         forwardBtnProps={{
+    //           style: {
+    //             width: 0,
+    //             height: 0,
+    //             minWidth: 0,
+    //             display: "none",
+    //             alignSelf: "center"
+    //           }
+    //         }}
+    //         backwardBtnProps={{
+    //           style: {
+    //             width: 0,
+    //             height: 0,
+    //             minWidth: 0,
+    //             display: "none",
+    //             alignSelf: "center"
+    //           }
+    //         }}
+    //         itemsToShow={2}
+    //         speed={25000}
+    //       >
+    //         {images.map((item, index) => (
+    //         <div
+    //         style={{
+    //             // backgroundImage: `url(${item})`,
+    //             width: 600,
+    //             border: "30px solid white",
+    //             height: 600,
+    //             textAlign: "center",
+    //             lineHeight: "240px",
+    //             maxWidth: "1000px",
+    //             boxSizing: "border-box"
+    //         }}
+    //         key={index}
+    //         >
+    //         <img src={item} className="carouselCustomDesign" />
+    //         </div>
+    //     ))}
+    // </Carousel>
+    //     </div>
+
     <div>
-      <ReactSimplyCarousel
-    activeSlideIndex={activeSlideIndex}
-    onRequestChange={setActiveSlideIndex}
-    itemsToShow={1}
-    itemsToScroll={1}
-    forwardBtnProps={{
-        //here you can also pass className, or any other button element attributes
+      <Carousel
+        autoplay={true}
+        containerProps={{
+          style: {
+            width: "100%",
+            justifyContent: "space-around",
+            userSelect: "none",
+          },
+        }}
+        preventScrollOnSwipe
+        swipeTreshold={60}
+        activeSlideIndex={activeSlide}
+        activeSlideProps={{
+          style: {
+            background: "none",
+          },
+        }}
+        onRequestChange={setActiveSlide}
+              forwardBtnProps={{
+            style: {
+                width: 0,
+                height: 0,
+                minWidth: 0,
+                display: "none",
+                alignSelf: "center"
+              },
+        //   children: ">",
+        //   style: {
+        //     width: 60,
+        //     height: 60,
+        //     minWidth: 60,
+        //     alignSelf: "center",
+        //   },
+        }}
+              backwardBtnProps={{
         style: {
-        alignSelf: 'center',
-        background: 'black',
-        border: 'none',
-        borderRadius: '50%',
-        color: 'white',
-        cursor: 'pointer',
-        fontSize: '20px',
-        height: 30,
-        lineHeight: 1,
-        textAlign: 'center',
-        width: 30,
-        },
-        children: <span>{`>`}</span>,
-    }}
-    backwardBtnProps={{
-        //here you can also pass className, or any other button element attributes
-        style: {
-        alignSelf: 'center',
-        background: 'black',
-        border: 'none',
-        borderRadius: '50%',
-        color: 'white',
-        cursor: 'pointer',
-        fontSize: '20px',
-        height: 30,
-        lineHeight: 1,
-        textAlign: 'center',
-        width: 30,
-        },
-        children: <span>{`<`}</span>,
-    }}
-    responsiveProps={[
-        {
-        itemsToShow: 2,
-        itemsToScroll: 2,
-        minWidth: 768,
-        },
-    ]}
-    speed={400}
-    easing="linear"
-    >
-    {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
-    <div style={{ width: 300, height: 300, background: '#ff80ed' }}>
-        slide 0
-    </div>
-    <div style={{ width: 300, height: 300, background: '#065535' }}>
-        slide 1
-    </div>
-    <div style={{ width: 300, height: 300, background: '#000000' }}>
-        slide 2
-    </div>
-    <div style={{ width: 300, height: 300, background: '#133337' }}>
-        slide 3
-    </div>
-    <div style={{ width: 300, height: 300, background: '#ffc0cb' }}>
-        slide 4
-    </div>
-    <div style={{ width: 300, height: 300, background: '#ffffff' }}>
-        slide 5
-    </div>
-    <div style={{ width: 300, height: 300, background: '#ffe4e1' }}>
-        slide 6
-    </div>
-    <div style={{ width: 300, height: 300, background: '#008080' }}>
-        slide 7
-    </div>
-    <div style={{ width: 300, height: 300, background: '#ff0000' }}>
-        slide 8
-    </div>
-    <div style={{ width: 300, height: 300, background: '#e6e6fa' }}>
-        slide 9
-    </div>
-</ReactSimplyCarousel>
+                width: 0,
+                height: 0,
+                minWidth: 0,
+                display: "none",
+                alignSelf: "center"
+          },
+        }}
+        dotsNav={{
+          show: false,
+          itemBtnProps: {
+            style: {
+              height: 16,
+              width: 16,
+              borderRadius: "50%",
+              border: 0,
+            },
+          },
+          activeItemBtnProps: {
+            style: {
+              height: 16,
+              width: 16,
+              borderRadius: "50%",
+              border: 0,
+              background: "black",
+            },
+          },
+        }}
+        itemsToShow={2}
+        speed={7800}
+        centerMode
+      >
+        {images.map((item, index) => (
+          <div
+            style={{
+              background: "none",
+              width: 400,
+              height: 400,
+            //   border: "30px solid white",
+              textAlign: "center",
+            lineHeight: "240px",
+              maxWidth: "1000px" ,
+              boxSizing: "border-box",
+            }}
+            key={index}
+          >
+            <img src={item}></img>
+            {index}
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 }

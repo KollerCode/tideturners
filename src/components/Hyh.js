@@ -89,7 +89,7 @@ function Hyh() {
         <Dogs></Dogs>
       </div>
       {/* Section 5 */}
-      <div className="section4 align-content-between">
+      <div className="section5 pb-5">
         <Row className="justify-content-center py-5 col-12">
           <img src={trailer} className="labels row img-fluid"></img>
         </Row>
