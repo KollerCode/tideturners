@@ -12,6 +12,8 @@ import iHFHT from "../assets/iHFHT.png"
 import Dogs from "./Dogs";
 import YoutubeEmbed from "./YoutubeEmbed";
 import Gameplay from "./Gameplay";
+import AboutHyh from "./AboutHyH";
+import Features from "./Features";
 
 function Hyh() {
 
@@ -86,7 +88,7 @@ function Hyh() {
         <Row className="justify-content-center py-5 col-12">
           <img src={trailer} className="labels row img-fluid"></img>
         </Row>
-        <Dogs></Dogs>
+        <AboutHyh></AboutHyh>
       </div>
       {/* Section 5 */}
       <div className="section5 pb-5">
@@ -94,6 +96,20 @@ function Hyh() {
           <img src={trailer} className="labels row img-fluid"></img>
         </Row>
         <Gameplay></Gameplay>
+      </div>
+      {/* section 6 */}
+      <div className="section5 pb-5">
+        <Row className="justify-content-center py-5 col-12">
+          <img src={trailer} className="labels row img-fluid"></img>
+        </Row>
+        <Features></Features>
+      </div>
+      {/* section 7 */}
+      <div className="section5 pb-5">
+        <Row className="justify-content-center py-5 col-12">
+          <img src={trailer} className="labels row img-fluid"></img>
+        </Row>
+        <Dogs></Dogs>
       </div>
     </div>
   ); 
