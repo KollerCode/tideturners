@@ -8,6 +8,7 @@ import Hyh from "./components/Hyh";
 // import Projects from "./components/Projects";
 import NavBar from "./components/NavBar";
 
+
 function App() {
   return (
     <>
@@ -18,7 +19,7 @@ function App() {
           </header>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/have-you-herd" element={<Hyh />} />
+            <Route path="haveyouherdgame.com" element={<Hyh />} />
           </Routes>
           <footer>
             <Footer />

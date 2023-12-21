@@ -21,14 +21,14 @@ function Games() {
         <br></br>
       </Row>
       <Row className="my-5">
-        <Col className="row align-items-center col-12 col-md-6">
+        <Col className="row align-items-center col-12">
           <h1 className="font1">Have You Herd?</h1>
           <img src={haveYouHerd}></img>
         </Col>
-        <Col className="row align-items-center col-12 col-md-6">
+        {/* <Col className="row align-items-center col-12 col-md-6">
           <h1 className="font1">Floppy and the Sleepy Planet</h1>
           <img src={floppy}></img>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );

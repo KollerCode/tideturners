@@ -8,99 +8,36 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import bernese from "../assets/dogs/bernese.png";
+import Slider from "react-slick";
+import players from "../assets/hyh-players.png"
 
 function Dogs() {
   return (
-  <Container>
-    <Row>
-      <div class="col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="" alt="team member" class="img-responsive"></img>
-          </div>
-          <div class="content row align-content-center">
-            <h3 class="title">Alfonso Crespo</h3>
-            <span class="post">Creative Director</span>
-            <p>
-              Remi has been working for 15 years in production ranging in AAA at
-              various studios (Liquid development/Microsoft) as well as work for
-              independent and being a company owner outsourcing for both games and
-              film. Such roles I have filled are technical artist/World artist,
-              level designer and producer.
-            </p>
-            <ul class="social">
-              <li>
-                <a href="#" class="fa fa-facebook"></a>
-              </li>
-              <li>
-                <a href="#" class="fa fa-twitter"></a>
-              </li>
-              <li>
-                <a href="#" class="fa fa-linkedin"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="our-team active">
-          <div class="pic">
-            <img src="" alt="team member" class="img-responsive"></img>
-          </div>
-          <div class="content row align-content-center">
-            <h3 class="title">Bennie Herdy</h3>
-            <span class="post">Art Director</span>
-            <p>
-              Bennie is the creative visionary of our team who leads the
-              development and visualization of our projects, setting the artistic
-              direction and ensuring conceptual integrity.
-            </p>
-            <ul class="social">
-              <li>
-                <a href="#" class="fa fa-facebook"></a>
-              </li>
-              <li>
-                <a href="#" class="fa fa-twitter"></a>
-              </li>
-              <li>
-                <a href="#" class="fa fa-linkedin"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="our-team">
-          <div class="pic">
-            <img src="" alt="team member" class="img-responsive"></img>
-          </div>
-          <div class="content row align-content-center">
-            <h3 class="title">Jose Montanez</h3>
-            <span class="post">Production Manager</span>
-            <p>
-              16 years of project management expertise in the dynamic video game
-              industry, my focus has primarily revolved around AAA titles as the
-              Production Manager for Liquid Development a Keywords Studio. During
-              my career, I have displayed proficiency in multiple areas, including
-              level design and systems design.
-            </p>
-            <ul class="social">
-              <li>
-                <a href="#" class="fa fa-facebook"></a>
-              </li>
-              <li>
-                <a href="#" class="fa fa-twitter"></a>
-              </li>
-              <li>
-                <a href="#" class="fa fa-linkedin"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </Row>
-  </Container>
+    <Container>
+      <Row className="align-items-center pb-5">
+        <Col xs={12} md={8} lg={6}>
+          <img className="img-fluid" src={players}></img>
+        </Col>
+        <Col xs={6} md={4} lg={6}>
+          <h1>Meet Malloy and his pups</h1>
+          <p>
+            A mysterious event called the Herdpocalypse has alerted multiple
+            governing bodies across the country. Dozens upon dozens of formerly
+            domesticated animals are being sprung from their pens by a
+            mysterious figure. Eye witness reports corroborate a mysterious
+            sheep that also looks like a pirate found near every outbreak.
+          </p>
+          <p>
+            Famed rancher Cowboy Maloy has been asked by his local government to
+            get his herding dogs to contain the Herdpocalypse and finally bring
+            Woolbeard to justice. HERD UP!
+          </p>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

@@ -77,8 +77,9 @@ const teamData = [
     image: require("../assets/team/sean.png"),
     title: "Sean Lockhart",
     subtitle: "Lead Level Designer",
-    description: "missing description - very on brand for him",
-    quote: "Less cool hair than Graham",
+    description:
+      "Sean is the silly guy behind the design and creation of our gameplay systems, and is responsible for turning said systems he creates into engaging gameplay loops. Seeing the players having fun with the things he creates is what continues to drive his passion for making games. After spending some time working outside of the creative industries, Sean realized his true calling was creating fun play spaces where others can have memorable experiences with their most cherished friends and family.",
+    quote: "Enjoys getting into character",
   },
 ];
 function Team() {

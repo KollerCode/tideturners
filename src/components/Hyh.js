@@ -10,6 +10,8 @@ import available from "../assets/available.png"
 import btn from "../assets/steam-btn.png"
 import iHFHT from "../assets/iHFHT.png"
 import Dogs from "./Dogs";
+import YoutubeEmbed from "./YoutubeEmbed";
+import Gameplay from "./Gameplay";
 
 function Hyh() {
 
@@ -59,17 +61,7 @@ function Hyh() {
         <div className="row justify-content-center pt-5 col-12">
           <img src={trailer} className="labels row img-fluid"></img>
         </div>
-        <video
-          width="750"
-          height="500"
-          controls
-          className="hyhVideo col-lg-6 col-12"
-        >
-          <source
-            src="https://video.wixstatic.com/video/91bad7_9867b5cbe7034c91ab083bc4ca820be3/480p/mp4/file.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <YoutubeEmbed embedId="j0GSacly9Sk?autoplay=1&loop=1&autopause=0&muted=1" />
       </div>
       {/* Section 3 */}
       <Row className="section3 align-content-between">
@@ -77,7 +69,11 @@ function Hyh() {
           <img className="col-6 img-fluid" src={available}></img>
         </Col>
         <Col>
-          <a href="facebook.com" target="_blank"className="img-fluid">
+          <a
+            href="https://store.steampowered.com/app/2209340/Have_You_Herd/"
+            target="_blank"
+            className="img-fluid"
+          >
             <img className="steamBtn img-fluid" src={btn}></img>
           </a>
         </Col>
@@ -85,7 +81,20 @@ function Hyh() {
           <img className="img-fluid" src={iHFHT}></img>
         </Col>
       </Row>
-      <Dogs></Dogs>
+      {/* Section 4 */}
+      <div className="section4 align-content-between">
+        <Row className="justify-content-center py-5 col-12">
+          <img src={trailer} className="labels row img-fluid"></img>
+        </Row>
+        <Dogs></Dogs>
+      </div>
+      {/* Section 5 */}
+      <div className="section4 align-content-between">
+        <Row className="justify-content-center py-5 col-12">
+          <img src={trailer} className="labels row img-fluid"></img>
+        </Row>
+        <Gameplay></Gameplay>
+      </div>
     </div>
   ); 
   

@@ -5,6 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import logo from "../assets/logo.png"
 
 
+
 function NavBar() {
   return (
     <Navbar className="navBar">
@@ -22,21 +23,21 @@ function NavBar() {
             <strong>Home</strong>
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="floppy">
+        {/* <LinkContainer to="floppy">
           <Nav.Link>
             <strong>Floppy and the Sleepy Planet</strong>
           </Nav.Link>
-        </LinkContainer>
-        <LinkContainer to="have-you-herd">
+        </LinkContainer> */}
+        <LinkContainer to="haveyouherdgame.com">
           <Nav.Link>
             <strong>Have You Herd?</strong>
           </Nav.Link>
         </LinkContainer>
-        <LinkContainer to="resume">
+        {/* <LinkContainer to="resume">
           <Nav.Link>
             <strong>Merchandise</strong>
           </Nav.Link>
-        </LinkContainer>
+        </LinkContainer> */}
         <LinkContainer to="resume">
           <Nav.Link>
             <strong>Contact</strong>
