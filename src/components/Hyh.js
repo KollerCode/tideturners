@@ -14,6 +14,7 @@ import YoutubeEmbed from "./YoutubeEmbed";
 import Gameplay from "./Gameplay";
 import AboutHyh from "./AboutHyH";
 import Features from "./Features";
+import Mailing from "./Mailing";
 
 function Hyh() {
 
@@ -110,6 +111,10 @@ function Hyh() {
           <img src={trailer} className="labels row img-fluid"></img>
         </Row>
         <Dogs></Dogs>
+      </div>
+      {/* section 8 */}
+      <div className="section5 pb-5">
+        <Mailing></Mailing>
       </div>
     </div>
   ); 

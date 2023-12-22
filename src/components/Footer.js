@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer text-center py-3">
       <h1>Follow us on Social Media</h1>
-      <h1>Steam link and social media</h1>
+      {/* <h1>Steam link and social media</h1> */}
       <div className="text-center">
           <ul>
             <Button href="https://github.com/KollerCode/">
