@@ -1,13 +1,15 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import iHFHT from "../assets/iHFHT.png";
+import MailchimpForm from "./MailchimpForm";
 
 function Mailing() {
     return (
       <Container>
         <Row className="align-items-center">
           <Col>
-            <h1>Join the Herd</h1>
+                    <h1>Join the Herd</h1>
+                    <MailchimpForm></MailchimpForm>
             <form
               action="MAILTO:your@email.com"
               method="post"
